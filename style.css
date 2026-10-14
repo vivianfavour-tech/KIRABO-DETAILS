@@ -8,8 +8,8 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
-    color: navyblue;
-    background-color: light green;
+    color: navy;
+    background-color: lightgreen;
 }
 
 .container {
@@ -25,7 +25,7 @@ a {
 
 /* Navbar */
 .navbar {
-    background-color:light gray;
+    background-color: lightgray;
     border-bottom: 1px solid yellow;
     position: sticky;
     top: 0;
