@@ -53,6 +53,23 @@ a {
     gap: 1.5rem;
 }
 
+.nav-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    margin: 5px 0;
+    background: currentColor;
+}
+
 .nav-links a:hover {
     color: #2563eb;
 }
@@ -248,12 +265,33 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 600px) {
     .nav-container {
-        flex-direction: column;
-        height: auto;
-        padding: 1rem 0;
+        position: relative;
+        height: 70px;
     }
+
+    .nav-toggle {
+        display: block;
+    }
+
     .nav-links {
-        margin-top: 0.75rem;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem 1rem;
+        background: #ffffff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.is-open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 0.75rem 0;
     }
 
     .hero-content {

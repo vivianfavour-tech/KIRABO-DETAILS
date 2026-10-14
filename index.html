@@ -12,7 +12,12 @@
     <header class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">Dev<span>Portfolio</span></a>
-            <nav class="nav-links">
+            <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-links" id="site-navigation">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
@@ -28,7 +33,7 @@
                 <h1>Hi, I'm <span class="highlight">KIRABO VIVIAN FAVOUR</span></h1>
                 <p class="tagline">Frontend Developer crafting clean, responsive web experiences with HTML, CSS, Git, and Vercel.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#projects" id="btn" class="btn primary-btn">View Projects</a>
                     <a href="#contact" class="btn secondary-btn">Get in Touch</a>
                 </div>
             </div>
@@ -122,6 +127,6 @@
             <p>&copy; 2026 KIRABO VIVIAN FAVOUR. Built with HTML, CSS, and deployed on Vercel.</p>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
